@@ -1,0 +1,402 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#more {
+    display: none;
+}
+
+
+/* Background Image
+-------------------------------------------------- */
+#colorButton {
+    transition: background-color 0.5s ease;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: rgb(0, 41, 25);
+    }
+
+    25% {
+        background-color: rgb(0, 106, 18);
+    }
+
+    50% {
+        background-color: rgb(0, 106, 18);
+    }
+
+    75% {
+        background-color: rgb(0, 106, 18);
+    }
+
+    100% {
+        background-color: rgb(0, 41, 25);
+    }
+}
+
+#colorButton {
+    animation: changeColor 2s infinite;
+}
+
+.maintso {
+    backdrop-filter: blur(5px);
+    border-radius: 25px 0 25px 0;
+}
+
+.mainty {
+    background-color: rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+
+#divbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    object-fit: cover;
+    animation: slide 8s infinite ease-in, zoomEffect 1.5s ease-in-out;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@keyframes slide {
+    0% {
+        background-image: url('/assets/images/isalo.webp');
+        opacity: 0;
+    }
+
+    3% {
+        opacity: 1;
+    }
+
+
+    50% {
+        background-image: url('/assets/images/rentalcar');
+        opacity: 1;
+    }
+
+    53% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('/assets/images/baobab2.jpg');
+        /* Retour à l'image initiale */
+    }
+}
+
+@keyframes zoomEffect {
+    0% {
+        filter: blur(10px);
+        /* start with 10px blur */
+    }
+
+    100% {
+        filter: blur(0);
+        /* end with no blur */
+    }
+}
+
+#madagascar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    object-fit: cover;
+    animation: boom 10s infinite ease-in, zoomEffect 1.5s ease-in-out;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@keyframes boom {
+    0% {
+        background-image: url('/assets/images/balein.jpeg');
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('/assets/images/baobab.jpeg');
+
+
+        opacity: 0;
+        /* Retour à l'image initiale */
+    }
+}
+
+
+#park {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    object-fit: cover;
+    animation: par 10s infinite ease-in, zoomEffect 1.5s ease-in-out;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@keyframes par {
+    0% {
+        background-image: url('/assets/images/isalo.webp');
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('/assets/images/baobab4.jpg');
+
+
+        opacity: 0;
+        /* Retour à l'image initiale */
+    }
+}
+
+#culture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    object-fit: cover;
+    animation: culture 10s infinite ease-in, zoomEffect 1.5s ease-in-out;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+@keyframes culture {
+    0% {
+        background-image: url('/assets/images/famadihana.jpg');
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    50% {
+        background-image: url('/assets/images/antananarivorova.jpg');
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        background-image: url('/assets/images/antananarivo.webp');
+
+
+        opacity: 0;
+        /* Retour à l'image initiale */
+    }
+}
+
+
+
+.sary {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+}
+
+
+.f {
+    font-size: 14px;
+    word-spacing: 3px;
+    line-height: 1.5;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.titre {
+    letter-spacing: -1px;
+    word-spacing: 2px;
+    font-family: "ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nav {
+    font-family: "Madimi One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.karla {
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image-hover {
+    transition: transform 0.3s ease;
+}
+
+.image-hover:hover {
+    transform: scale(1.02);
+}
+
+.hover-card {
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 24px;
+    transition: color 0.3s ease;
+
+
+}
+
+.hover-card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 60, 78);
+
+}
+
+/* text milatsaka*/
+
+@keyframes fall-text {
+    0% {
+        transform: translateY(-40px);
+        /* Commence hors de l'écran en haut */
+        opacity: 0;
+        /* Invisible au début */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Revient à sa position normale */
+        opacity: 1;
+        /* Devient visible */
+    }
+}
+
+.txt {
+
+    /* Cache le texte avant l'animation */
+    animation: fall-text 1s ease-out forwards;
+}
+
+.txt1 {
+
+    /* Cache le texte avant l'animation */
+    animation: fall-text 1.5s ease-out forwards;
+}
+
+.txt2 {
+
+    /* Cache le texte avant l'animation */
+    animation: fall-text 2s ease-out forwards;
+}
+
+.txt3 {
+
+    /* Cache le texte avant l'animation */
+    animation: fall-text 2.5s ease-out forwards;
+}
+
+@keyframes fall-bounce {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    85% {
+        transform: translateY(-15px);
+        /* Petit rebond vers le haut */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Retour à la position normale */
+    }
+}
+
+.mievotra {
+    animation: fall-bounce 1.5s ease-out forwards;
+}
+
+
+.alltours {
+    background-image: url('/assets/images/exploration.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+}
+
+
+#rent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    object-fit: cover;
+    background-image: url('/assets/images/rentalcar');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.teracan {
+    /* Ajuste selon le besoin */
+    background-image: url('/assets/images/teracan.jpeg');
+    /* Chemin de l'image */
+    background-size: cover;
+    /* Ajuste l'image pour couvrir tout l'espace */
+    background-position: center;
+    /* Centre l'image */
+    background-repeat: no-repeat;
+    /* Évite la répétition */
+}
+
+.raccourci {
+    z-index: 110;
+}
+
+.ima {
+    z-index: 50;
+
+}
+
+.zoomable {
+
+    /* Taille initiale */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoomable:active {
+
+    transform: translate(50%) scale(1.5)
+        /* Agrandir l'image */
+}

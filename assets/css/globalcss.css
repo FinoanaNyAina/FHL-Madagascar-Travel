@@ -12,6 +12,7 @@
 -------------------------------------------------- */
 #colorButton {
     transition: background-color 0.5s ease;
+    animation: changeColor 2s infinite;
 }
 
 @keyframes changeColor {
@@ -20,7 +21,7 @@
     }
 
     25% {
-        background-color: rgb(0, 106, 18);
+        background-color: rgb(0, 41, 25);
     }
 
     50% {
@@ -36,8 +37,31 @@
     }
 }
 
-#colorButton {
-    animation: changeColor 2s infinite;
+#colorButton1 {
+    transition: background-color 0.5s ease;
+    animation: kk 2s infinite;
+}
+
+@keyframes kk {
+    0% {
+        background-color: rgb(0, 32, 68);
+    }
+
+    25% {
+        background-color: rgb(0, 32, 68);
+    }
+
+    50% {
+        background-color: rgb(106, 69, 0);
+    }
+
+    75% {
+        background-color: rgb(106, 69, 0);
+    }
+
+    100% {
+        background-color: rgb(0, 32, 68);
+    }
 }
 
 .maintso {
